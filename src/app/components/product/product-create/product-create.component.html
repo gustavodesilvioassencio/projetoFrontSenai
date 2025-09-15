@@ -1,15 +1,27 @@
 <mat-card>
     <mat-card-title>Novo Produto</mat-card-title>
     <form>
+
         <mat-form-field>
-            <input matInput placeholder="Nome" [(ngModel)]="product.proNome" name="proNome">
+            <input matInput placeholder="Sku" [(ngModel)]="produto.sku" name="sku">
         </mat-form-field>
+
         <mat-form-field>
-            <input matInput placeholder="Preço de custo (R$)" [(ngModel)]="product.proPrecoCusto" name="proPrecoCusto">
+            <input matInput placeholder="Categoria" [(ngModel)]="produto.categoria" name="categoria">
         </mat-form-field>
+
         <mat-form-field>
-            <input matInput placeholder="Preço de venda (R$)" [(ngModel)]="product.proPrecoVenda" name="proPrecoVenda">
+            <input matInput placeholder="marca" [(ngModel)]="produto.marca" name="marca">
         </mat-form-field>
+
+         <mat-form-field>
+            <input matInput placeholder="modelo" [(ngModel)]="produto.modelo" name="modelo">
+        </mat-form-field>
+
+         <mat-form-field>
+            <input matInput placeholder="unidadeMedida" [(ngModel)]="produto.unidadeMedida" name="unidadeMedida">
+        </mat-form-field>
+        
     </form>
 
     <button mat-raised-button (click)="createProduct()" color="primary">

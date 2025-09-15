@@ -3,13 +3,13 @@ import { Injectable } from '@angular/core';
 //importando matSnackBar
 import {MatSnackBar} from '@angular/material/snack-bar';
 import { Observable } from 'rxjs';
-import { Product } from './product.model';
+import { Produto } from './produto.model';
 
 @Injectable({
   providedIn: 'root'
 })
 
-export class ProductService {
+export class ProdutoService {
 
   baseUrl = "http://localhost:8080/produtos"
 
@@ -23,27 +23,27 @@ export class ProductService {
     })
   }
 
-  create(product: Product): Observable<Product>{
-    return this.http.post<Product>(this.baseUrl, product)
+  create(produto: Produto): Observable<Produto>{
+    return this.http.post<Produto>(this.baseUrl, produto)
   }
 
-  read(): Observable<Product[]>{
-    return this.http.get<Product[]>(this.baseUrl)
+  read(): Observable<Produto[]>{
+    return this.http.get<Produto[]>(this.baseUrl)
   }
 
-  readById(proId: string): Observable<Product>{
+  readById(proId: string): Observable<Produto>{
     const url = `${this.baseUrl}/${proId}`
-    return this.http.get<Product>(url)
+    return this.http.get<Produto>(url)
   }
  
-  update(product: Product): Observable<Product>{
-    const url = `${this.baseUrl}/${product.proId}`
-    return this.http.put<Product>(url, product)
+  update(produto: Produto): Observable<Produto>{
+    const url = `${this.baseUrl}/${produto.id}`
+    return this.http.put<Produto>(url, produto)
   }
   
-  delete(proId: number): Observable<Product>{    
+  delete(proId: number): Observable<Produto>{    
     const url = `${this.baseUrl}/${proId}`
-    return this.http.delete<Product>(url)
+    return this.http.delete<Produto>(url)
   }
 
 
