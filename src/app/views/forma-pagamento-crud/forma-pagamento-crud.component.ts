@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-forma-pagamento-crud',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormaPagamentoCrudComponent implements OnInit {
 
-  constructor() { }
+  //construtor para configurar botao para tela de Formapagamento
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  //criando interação com botoes
+  navigateToFormapagamentoCreate(): void{
+    this.router.navigate(['/Formapagamento/create'])
+  }
+
 }
+
