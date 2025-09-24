@@ -29,6 +29,11 @@ const routes: Routes = [
     path: "formapagamento",
     component: FormaPagamentoCrudComponent
   },
+  {
+    path: "fornecedor",
+    component: FormaPagamentoCrudComponent
+  },
+  
   
 
 ];

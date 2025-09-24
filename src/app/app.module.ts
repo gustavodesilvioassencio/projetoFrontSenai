@@ -34,6 +34,7 @@ import { registerLocaleData } from '@angular/common';
 import { UsuarioCreateComponent } from './components/usuario/usuario-create/usuario-create.component';
 import { UsuarioCrudComponent } from './views/usuario-crud/usuario-crud.component';
 import { FormaPagamentoCrudComponent } from './views/forma-pagamento-crud/forma-pagamento-crud.component';
+import { FornecedorCrudComponent } from './views/fornecedor-crud/fornecedor-crud.component';
 
 registerLocaleData(localePt)
 
@@ -49,7 +50,8 @@ registerLocaleData(localePt)
     ProductCreateComponent,
     UsuarioCreateComponent,
     UsuarioCrudComponent,
-    FormaPagamentoCrudComponent],
+    FormaPagamentoCrudComponent,
+    FornecedorCrudComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

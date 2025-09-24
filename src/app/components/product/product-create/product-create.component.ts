@@ -11,7 +11,7 @@ import { ProdutoService } from '../produto.service';
 export class ProductCreateComponent implements OnInit {
 
   produto: Produto = {
-    sku: '',
+    nome: '',
     categoria: '',
     marca: '',
     modelo: '',
