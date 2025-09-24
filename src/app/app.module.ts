@@ -31,6 +31,8 @@ import { ProductCreateComponent } from './components/product/product-create/prod
 //importações
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
+import { UsuarioCreateComponent } from './components/usuario/usuario-create/usuario-create.component';
+import { UsuarioCrudComponent } from './views/usuario-crud/usuario-crud.component';
 
 registerLocaleData(localePt)
 
@@ -43,7 +45,9 @@ registerLocaleData(localePt)
     HomeComponent,
     ProductCrudComponent,
     RedDirective,
-    ProductCreateComponent],
+    ProductCreateComponent,
+    UsuarioCreateComponent,
+    UsuarioCrudComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
