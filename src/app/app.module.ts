@@ -33,6 +33,7 @@ import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
 import { UsuarioCreateComponent } from './components/usuario/usuario-create/usuario-create.component';
 import { UsuarioCrudComponent } from './views/usuario-crud/usuario-crud.component';
+import { FormaPagamentoCrudComponent } from './views/forma-pagamento-crud/forma-pagamento-crud.component';
 
 registerLocaleData(localePt)
 
@@ -47,7 +48,8 @@ registerLocaleData(localePt)
     RedDirective,
     ProductCreateComponent,
     UsuarioCreateComponent,
-    UsuarioCrudComponent],
+    UsuarioCrudComponent,
+    FormaPagamentoCrudComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-usuario-crud',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsuarioCrudComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+    //construtor para configurar botao para tela de usuario
+    constructor(private router: Router) { }
+  
+    ngOnInit(): void {
+    }
+  
+    //criando interação com botoes
+    navigateToUsuarioCreate(): void{
+      this.router.navigate(['/usuario/create'])
+    }
+  
 }
