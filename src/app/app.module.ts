@@ -35,6 +35,7 @@ import { UsuarioCreateComponent } from './components/usuario/usuario-create/usua
 import { UsuarioCrudComponent } from './views/usuario-crud/usuario-crud.component';
 import { FormaPagamentoCrudComponent } from './views/forma-pagamento-crud/forma-pagamento-crud.component';
 import { FornecedorCrudComponent } from './views/fornecedor-crud/fornecedor-crud.component';
+import { ProductReadComponent } from './components/product/product-read/product-read.component';
 
 registerLocaleData(localePt)
 
@@ -51,7 +52,8 @@ registerLocaleData(localePt)
     UsuarioCreateComponent,
     UsuarioCrudComponent,
     FormaPagamentoCrudComponent,
-    FornecedorCrudComponent],
+    FornecedorCrudComponent,
+    ProductReadComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
