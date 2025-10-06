@@ -10,7 +10,7 @@ import { ProdutoService } from '../produto.service';
 export class ProductReadComponent {
 
   produtos!: Produto[]
-  displayedColumns = ['proId', 'proNome', 'proPrecoCusto', 'proPrecoVenda', 'fornecedor', 'action']
+  displayedColumns = ['id', 'nome', 'categoria', 'marca', 'action']
 
   constructor(private produtoService: ProdutoService) { }
 
