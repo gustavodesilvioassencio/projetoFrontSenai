@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {HomeComponent} from './views/home/home.component';
 import {ProductCrudComponent} from  './views/product-crud/product-crud.component';
-import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 import { UsuarioCreateComponent } from './components/usuario/usuario-create/usuario-create.component';
 import { UsuarioCrudComponent } from './views/usuario-crud/usuario-crud.component';
 import { FormaPagamentoCrudComponent } from './views/forma-pagamento-crud/forma-pagamento-crud.component';
@@ -18,8 +17,8 @@ const routes: Routes = [
     component: ProductCrudComponent
   },
   {
-    path: "products/create",
-    component: ProductCreateComponent
+    path: "usuario/create",
+    component: UsuarioCreateComponent
   },  
   {
     path: "usuarios",

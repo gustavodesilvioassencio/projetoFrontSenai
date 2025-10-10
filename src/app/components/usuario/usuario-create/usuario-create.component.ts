@@ -6,6 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./usuario-create.component.css']
 })
 export class UsuarioCreateComponent implements OnInit {
+Usuario: any;
+createUsuario() {
+throw new Error('Method not implemented.');
+}
+cancel() {
+throw new Error('Method not implemented.');
+}
+createProduct() {
+throw new Error('Method not implemented.');
+}
+produto: any;
+navigateToUsuarioCreate() {
+throw new Error('Method not implemented.');
+}
 
   constructor() { }
 

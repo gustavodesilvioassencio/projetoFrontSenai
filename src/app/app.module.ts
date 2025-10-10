@@ -26,7 +26,6 @@ import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './views/home/home.component';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { RedDirective } from './directives/red.directive';
-import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 
 //importações
 import localePt from '@angular/common/locales/pt';
@@ -35,7 +34,9 @@ import { UsuarioCreateComponent } from './components/usuario/usuario-create/usua
 import { UsuarioCrudComponent } from './views/usuario-crud/usuario-crud.component';
 import { FormaPagamentoCrudComponent } from './views/forma-pagamento-crud/forma-pagamento-crud.component';
 import { FornecedorCrudComponent } from './views/fornecedor-crud/fornecedor-crud.component';
-import { ProductReadComponent } from './components/product/product-read/product-read.component';
+import { ProductCreateComponent } from './components/product/product-create/ProductCreateComponent';
+import { FormaPagamentoCreateComponent } from './components/formaPagamento/forma-pagamento-create/forma-pagamento-create.component';
+import { CreateComponentHtmlComponent } from './components/usuario/create.component.html/create.component.html.component';
 
 registerLocaleData(localePt)
 
@@ -48,12 +49,14 @@ registerLocaleData(localePt)
     HomeComponent,
     ProductCrudComponent,
     RedDirective,
-    ProductCreateComponent,
     UsuarioCreateComponent,
     UsuarioCrudComponent,
     FormaPagamentoCrudComponent,
     FornecedorCrudComponent,
-    ProductReadComponent],
+    ProductCreateComponent,
+    FormaPagamentoCreateComponent,
+    CreateComponentHtmlComponent
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,

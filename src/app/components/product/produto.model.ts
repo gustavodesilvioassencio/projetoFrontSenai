@@ -1,8 +1,16 @@
 export interface Produto {
-  id?: number;
-  nome: string;
-  categoria: string;
-  marca: string;
-  modelo: string;
-  unidadeMedida: string;
+nome: any
+categoria: any
+  id: any
+  Id?: number
+  unidade: string
+  ferramenta: string
+  metros: string
+  centimetros: string
+  litro: string
+  quilograma: string
+  grama: string
+  pacote: string
+  rolo: string
+  produto?: Produto 
 }

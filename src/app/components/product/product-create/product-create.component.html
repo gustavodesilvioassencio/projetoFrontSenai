@@ -2,26 +2,48 @@
     <mat-card-title>Novo Produto</mat-card-title>
     <form>
 
-        <mat-form-field>
-            <input matInput placeholder="nome" [(ngModel)]="produto.nome" name="nome">
-        </mat-form-field>
+       <mat-form-field>
+            <input matInput placeholder="id" [(ngModel)]="produto.id" name="id">
+          </mat-form-field>
 
         <mat-form-field>
-            <input matInput placeholder="Categoria" [(ngModel)]="produto.categoria" name="categoria">
-        </mat-form-field>
+            <input matInput placeholder="Unidade" [(ngModel)]="produto.unidade" name="unidade">
+          </mat-form-field>
+      
+          <mat-form-field>
+            <input matInput placeholder="Ferramenta" [(ngModel)]="produto.ferramenta" name="ferramenta">
+          </mat-form-field>
+      
+          <mat-form-field>
+            <input matInput placeholder="Metros" [(ngModel)]="produto.metros" name="metros">
+          </mat-form-field>
+      
+          <mat-form-field>
+            <input matInput placeholder="Centímetros" [(ngModel)]="produto.centimetros" name="centimetros">
+          </mat-form-field>
+      
+          <mat-form-field>
+            <input matInput placeholder="Litro" [(ngModel)]="produto.litro" name="litro">
+          </mat-form-field>
+      
+          <mat-form-field>
+            <input matInput placeholder="Quilograma" [(ngModel)]="produto.quilograma" name="quilograma">
+          </mat-form-field>
+      
+          <mat-form-field>
+            <input matInput placeholder="Grama" [(ngModel)]="produto.grama" name="grama">
+          </mat-form-field>
+      
+          <mat-form-field>
+            <input matInput placeholder="Pacote" [(ngModel)]="produto.pacote" name="pacote">
+          </mat-form-field>
+      
+          <mat-form-field>
+            <input matInput placeholder="Rolo" [(ngModel)]="produto.rolo" name="rolo">
+          </mat-form-field>
 
-        <mat-form-field>
-            <input matInput placeholder="marca" [(ngModel)]="produto.marca" name="marca">
-        </mat-form-field>
 
-         <mat-form-field>
-            <input matInput placeholder="modelo" [(ngModel)]="produto.modelo" name="modelo">
-        </mat-form-field>
 
-         <mat-form-field>
-            <input matInput placeholder="unidadeMedida" [(ngModel)]="produto.unidadeMedida" name="unidadeMedida">
-        </mat-form-field>
-        
     </form>
 
     <button mat-raised-button (click)="createProduct()" color="primary">
