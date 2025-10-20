@@ -40,6 +40,7 @@ import { CreateComponentHtmlComponent } from './components/usuario/create.compon
 import { FornecedorCreateComponent } from './components/fornecedor/fornecedor-create/fornecedor-create.component';
 import { FornecedorReadComponent } from './components/fornecedor/fornecedor-read/fornecedor-read.component';
 import { FormaPagamentoReadComponent } from './components/formaPagamento/forma-pagamento-read/forma-pagamento-read.component';
+import { ProductReadComponent } from './components/product/product-read/product-read.component';
 
 registerLocaleData(localePt)
 
@@ -61,7 +62,8 @@ registerLocaleData(localePt)
     CreateComponentHtmlComponent,
     FornecedorCreateComponent,
     FornecedorReadComponent,
-    FormaPagamentoReadComponent
+    FormaPagamentoReadComponent,
+    ProductReadComponent
     ],
   imports: [
     BrowserModule,
