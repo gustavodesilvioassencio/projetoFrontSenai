@@ -1,1 +1,46 @@
-<p>fornecedor-create works!</p>
+<mat-card>
+    <mat-card-title>Novo Fornecedor</mat-card-title>
+    <form>
+
+       <mat-form-field>
+            <input matInput placeholder="id" [(ngModel)]="fornecedor.id" name="id">
+          </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Nome Fantasia" [(ngModel)]="fornecedor.nome_fantasia" name="nome_fantasia">
+          </mat-form-field>
+      
+          <mat-form-field>
+            <input matInput placeholder="Razão Social" [(ngModel)]="fornecedor.cnpj" name="cnpj">
+          </mat-form-field>
+      
+          <mat-form-field>
+            <input matInput placeholder="Inscrição Estadual" [(ngModel)]="fornecedor.inscricao_estadual" name="inscricao_estadual">
+          </mat-form-field>
+      
+          <mat-form-field>
+            <input matInput placeholder="Representante" [(ngModel)]="fornecedor.nome_representante" name="nome_representante">
+          </mat-form-field>
+      
+          <mat-form-field>
+            <input matInput placeholder="Condições de pagamento" [(ngModel)]="fornecedor.condicoes_pagamento" name="condicoes_pagamento">
+          </mat-form-field>
+      
+          <mat-form-field>
+            <input matInput placeholder="Prazo Médio de Entrega" [(ngModel)]="fornecedor.prazo_medio_entrega" name="prazo_medio_entrega">
+          </mat-form-field>
+      
+          <mat-form-field>
+            <input matInput placeholder="Observações" [(ngModel)]="fornecedor.observacoes" name="observacoes">
+          </mat-form-field>
+    </form>
+
+    <button mat-raised-button (click)="createFornecedor()" color="primary">
+        Salvar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+
+</mat-card>

@@ -6,6 +6,7 @@ import { UsuarioCreateComponent } from './components/usuario/usuario-create/usua
 import { UsuarioCrudComponent } from './views/usuario-crud/usuario-crud.component';
 import { FormaPagamentoCrudComponent } from './views/forma-pagamento-crud/forma-pagamento-crud.component';
 import { FornecedorCrudComponent } from './views/fornecedor-crud/fornecedor-crud.component';
+import { FornecedorCreateComponent } from './components/fornecedor/fornecedor-create/fornecedor-create.component';
 
 //configuração para rotear entre as paginas na home
 const routes: Routes = [
@@ -33,9 +34,11 @@ const routes: Routes = [
     path: "fornecedor",
     component: FornecedorCrudComponent
   },
+  {
+    path: "fornecedor/create",
+    component: FornecedorCreateComponent
+  }
   
-  
-
 ];
 
 @NgModule({

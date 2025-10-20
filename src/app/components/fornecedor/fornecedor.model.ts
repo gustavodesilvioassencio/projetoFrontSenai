@@ -1,8 +1,7 @@
 export interface Fornecedor {
   nome_fantasia: any
   razao_social: any
-  id: any
-  Id?: number
+  id?: number
   cnpj: string
   inscricao_estadual: string
   nome_representante: string
