@@ -16,7 +16,7 @@ export class FormaPagamentoCrudComponent implements OnInit {
 
   //criando interação com botoes
   navigateToFormapagamentoCreate(): void{
-    this.router.navigate(['/Formapagamento/create'])
+    this.router.navigate(['/formapagamento/create'])
   }
 
 }

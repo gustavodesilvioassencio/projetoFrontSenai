@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Produto } from '../produto.model';
+import { ProdutoService } from '../produto.service';
 
 @Component({
   selector: 'app-product-read',
@@ -6,5 +8,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./product-read.component.css']
 })
 export class ProductReadComponent {
+ 
 
-}
+    fornecedor!: Produto[]
+    displayedColumns = ['proId', 'proNome', 'proPrecoCusto', 'proPrecoVenda', 'fornecedor', 'action']
+  
+    constructor(private fornecedorService: ProdutoService) { }
+  
+    ngOnInit(): void {
+      this.fornecedorService.read().subscribe(produt => {
+        this.fornecedor = produt
+        console.log(produt)  
+      })
+    }
+  
+  
+  }
+  
+

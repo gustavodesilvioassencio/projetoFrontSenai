@@ -1,39 +1,29 @@
 <mat-card>
-    <mat-card-title>Novo Produto</mat-card-title>
-    <form>
+  <mat-card-title>Nova Forma de Pagamento</mat-card-title>
+  <form>
+    <mat-form-field>
+      <input matInput placeholder="Descrição" [(ngModel)]="fpagamento.nome" name="nome">
+    </mat-form-field>
 
-        <mat-form-field>
-            <input matInput placeholder="Unidade" [(ngModel)]="formaPagamento.unidade" name="unidade">
-          </mat-form-field>
-      
-         
-      
-          <mat-form-field>
-            <input matInput placeholder="id" [(ngModel)]="formaPagamento.id" name="id">
-          </mat-form-field>
-      
-          <mat-form-field>
-            <input matInput placeholder="nome" [(ngModel)]="formaPagamento.nome" name="nome">
-          </mat-form-field>
-      
-          <mat-form-field>
-            <input matInput placeholder="tipo" [(ngModel)]="formaPagamento.tipo" tipo="pacote">
-          </mat-form-field>
-      
-          <mat-form-field>
-            <input matInput placeholder="categoria" [(ngModel)]="formaPagamento.categoria" name="categoria">
-          </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Código" [(ngModel)]="fpagamento.codigo" name="codigo">
+    </mat-form-field>
 
+    <mat-form-field>
+      <input matInput placeholder="Tipo" [(ngModel)]="fpagamento.tipo " name="tipo">
+    </mat-form-field>
 
+    <mat-form-field>
+      <input matInput placeholder="Categoria" [(ngModel)]="fpagamento.categoria" name="categoria">
+    </mat-form-field>
+  </form>
 
-    </form>
+  <button mat-raised-button (click)="createFormaPagamento()" color="primary">
+    Salvar
+  </button>
 
-    <button mat-raised-button (click)="createformaPagamento()" color="primary">
-        Salvar
-    </button>
-    
-    <button mat-raised-button (click)="cancel()">
-        Cancelar
-    </button>
+  <button mat-raised-button (click)="cancel()">
+    Cancelar
+  </button>
 
 </mat-card>
