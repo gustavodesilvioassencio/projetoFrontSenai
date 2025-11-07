@@ -43,6 +43,7 @@ import { ProductReadComponent } from './components/product/product-read/product-
 import { UsuarioReadComponent } from './components/usuario/usuario-read/usuario-read.component';
 import { FormaPagamentoReadComponent } from './components/formaPagamento/forma-pagamento-read/forma-pagamento-read.component';
 import { FormaPagamentoUpdateComponent } from './components/formaPagamento/forma-pagamento-update/forma-pagamento-update.component';
+import { FormaPagamentoDeleteComponent } from './components/formaPagamento/forma-pagamento-delete/forma-pagamento-delete.component';
 
 registerLocaleData(localePt)
 
@@ -67,7 +68,8 @@ registerLocaleData(localePt)
     ProductReadComponent,
     UsuarioReadComponent,
     FormaPagamentoReadComponent,
-    FormaPagamentoUpdateComponent
+    FormaPagamentoUpdateComponent,
+    FormaPagamentoDeleteComponent
     ],
   imports: [
     BrowserModule,

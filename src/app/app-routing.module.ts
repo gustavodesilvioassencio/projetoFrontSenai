@@ -9,6 +9,7 @@ import { FornecedorCrudComponent } from './views/fornecedor-crud/fornecedor-crud
 import { FornecedorCreateComponent } from './components/fornecedor/fornecedor-create/fornecedor-create.component';
 import { FormaPagamentoCreateComponent } from './components/formaPagamento/forma-pagamento-create/forma-pagamento-create.component';
 import { FormaPagamentoUpdateComponent } from './components/formaPagamento/forma-pagamento-update/forma-pagamento-update.component';
+import { FormaPagamentoDeleteComponent } from './components/formaPagamento/forma-pagamento-delete/forma-pagamento-delete.component';
 
 //configuração para rotear entre as paginas na home
 const routes: Routes = [
@@ -30,10 +31,16 @@ const routes: Routes = [
   },{
     path: "formapagamento/create",
     component: FormaPagamentoCreateComponent,
-  },{
+  },
+  {
     path: "formapagamento/update/:id",
     component: FormaPagamentoUpdateComponent
-  },{
+  },
+  {
+    path: "formapagamento/delete/:id",
+    component: FormaPagamentoDeleteComponent
+  },
+  {
     path: "fornecedor",
     component: FornecedorCrudComponent
   },{
