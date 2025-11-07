@@ -1,0 +1,26 @@
+<mat-card>
+    <mat-card-title>Alterar Forma de Pagamento</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="formaPagamento.nome" name="nome">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Código" [(ngModel)]="formaPagamento.codigo" name="codigo">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Tipo" [(ngModel)]="formaPagamento.tipo" name="tipo">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Categoria" [(ngModel)]="formaPagamento.categoria" name="categoria">
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button (click)="updateFormaPagamento()" color="primary">
+        Atualizar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+
+</mat-card>
