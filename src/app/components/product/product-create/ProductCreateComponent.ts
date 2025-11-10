@@ -22,11 +22,11 @@ export class ProductCreateComponent implements OnInit {
     grama: '',
     pacote: '',
     rolo: '',
-    nome: undefined,
-    categoria: undefined
+    nome: '',
+    categoria: ''
   };
 
-  //importando productService
+
   constructor(private productService: ProdutoService,
     private router: Router) { }
 

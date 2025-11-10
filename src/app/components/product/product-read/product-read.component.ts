@@ -11,7 +11,7 @@ export class ProductReadComponent {
  
 
     fornecedor!: Produto[]
-    displayedColumns = ['proId', 'proNome', 'proPrecoCusto', 'proPrecoVenda', 'fornecedor', 'action']
+    displayedColumns = ['nome', 'categoria', 'id', 'Id', 'unidade', 'ferramenta', 'metros', 'centimetros', 'litro', 'quilograma', 'grama', 'pacote', 'rolo', 'produto'];
   
     constructor(private fornecedorService: ProdutoService) { }
   

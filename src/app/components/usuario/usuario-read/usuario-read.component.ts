@@ -10,7 +10,7 @@ import { usuarioService } from './usuario.service';
 })
 export class UsuarioReadComponent implements OnInit {
   usuario!: usuario[];
-  displayedColumns = ['proId', 'propix', 'proPrecoCusto', 'proPrecoVenda', 'usuario', 'action'];
+  displayedColumns = ['id', 'nome', 'email', 'cpf', 'senha','action'];
   pagamentos = new MatTableDataSource<usuario>([]);
 
   constructor(private usuarioService: usuarioService) {}

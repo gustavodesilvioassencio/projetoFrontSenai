@@ -22,7 +22,7 @@ export class FornecedorCreateComponent {
     observacoes: ''
   };
 
-  //importando productService
+  
   constructor(private fornecedorService: FornecedorService,
     private router: Router) { }
 

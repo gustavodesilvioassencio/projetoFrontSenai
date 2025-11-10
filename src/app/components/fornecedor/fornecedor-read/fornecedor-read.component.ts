@@ -10,7 +10,7 @@ import { FornecedorService } from '../fornecedor.service';
 export class FornecedorReadComponent {
 
   fornecedor!: Fornecedor[]
-  displayedColumns = ['proId', 'proNome', 'proPrecoCusto', 'proPrecoVenda', 'fornecedor', 'action']
+  displayedColumns =  ['id', 'nome_fantasia', 'razao_social', 'cnpj', 'inscricao_estadual', 'nome_representante', 'condicoes_pagamento', 'prazo_medio_entrega', 'observacoes', 'action'];
 
   constructor(private fornecedorService: FornecedorService) { }
 
